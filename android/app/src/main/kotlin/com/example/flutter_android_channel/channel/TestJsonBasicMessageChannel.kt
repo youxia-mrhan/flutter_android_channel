@@ -124,13 +124,6 @@ class TestJsonBasicMessageChannel(messenger: BinaryMessenger) :
     private fun getRandomV() = (0..100).random()
 
     /**
-     * 解除绑定
-     */
-    fun closeChannel() {
-        mChannel.setMessageHandler(null)
-    }
-
-    /**
      * Json 转 Map
      */
     private fun getMap(jsonString: String?): HashMap<String, Any>? {

@@ -153,11 +153,4 @@ class TestMethodChannel(messenger: BinaryMessenger) : MethodChannel.MethodCallHa
      */
     private fun getRandomV() = (0..100).random()
 
-    /**
-     * 解除绑定
-     */
-    fun closeChannel() {
-        mChannel.setMethodCallHandler(null)
-    }
-
 }

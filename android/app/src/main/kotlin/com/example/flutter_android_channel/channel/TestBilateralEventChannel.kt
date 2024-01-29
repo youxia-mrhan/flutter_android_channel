@@ -43,12 +43,5 @@ class TestBilateralEventChannel(messenger: BinaryMessenger) : EventChannel.Strea
 
     }
 
-    /**
-     * 解除绑定
-     */
-    fun closeChannel() {
-        mChannel.setStreamHandler(null)
-    }
-
 }
 

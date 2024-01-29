@@ -109,14 +109,6 @@ class TestMixUseChannel(messenger: BinaryMessenger) : BasicMessageChannel.Messag
     }
 
     /**
-     * 解除绑定
-     */
-    fun closeChannel() {
-        mBasicMessageChannel.setMessageHandler(null)
-        mMethodChannel.setMethodCallHandler(null)
-    }
-
-    /**
      * 获取随机数
      */
     private fun getRandomV() = (0..100).random()

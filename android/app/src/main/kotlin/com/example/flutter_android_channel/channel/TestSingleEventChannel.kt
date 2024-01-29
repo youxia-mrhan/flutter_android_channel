@@ -65,12 +65,5 @@ class TestSingleEventChannel(messenger: BinaryMessenger) : EventChannel.StreamHa
 
     }
 
-    /**
-     * 解除绑定
-     */
-    fun closeChannel() {
-        mChannel.setStreamHandler(null)
-    }
-
 }
 

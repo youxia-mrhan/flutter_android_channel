@@ -128,11 +128,4 @@ class TestByteBasicMessageChannel(messenger: BinaryMessenger, private val contex
 //        })
 //    }
 
-    /**
-     * 解除绑定
-     */
-    fun closeChannel() {
-        mChannel.setMessageHandler(null)
-    }
-
 }
